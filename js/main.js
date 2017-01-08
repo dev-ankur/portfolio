@@ -7,4 +7,15 @@ $(document).ready(function(){
 		$(anim).addClass("animated bounceIn");
 	})
 */
+
+	$("#particles-js .pro-title").css('visibility', 'visible').addClass("animated flipInX");
+
+	//var anim = "#particles-js .pro-title";
+	var events = "webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend";
+
+	$("#particles-js .pro-title").one(events, function(){
+
+		$("#particles-js .pro-desc").css('visibility', 'visible').addClass("animated zoomIn");
+	});
+
 });

@@ -48,6 +48,7 @@ section.pro-describe{
 }
 
 .pro-title{
+	visibility: hidden;
 	font-family: 'Tangerine', cursive;
 	text-transform: capitalize;
     font-weight: 700;
@@ -65,11 +66,12 @@ section.pro-describe{
 }
 
 .pro-detail .pro-desc{
-	-webkit-animation-delay: 1s;
+	visibility: hidden;
+	/*-webkit-animation-delay: 1s;
 	-moz-animation-delay: 1s;
 	-o-animation-delay: 1s;
 	-ms-animation-delay: 1s;
-	animation-delay: 1s;
+	animation-delay: 1s;*/
 	/*
 	-webkit-animation-duration: 1s;
 	-moz-animation-duration: 1s;
