@@ -140,7 +140,7 @@ section.pro-describe{
 }
 
 .about-detail .skills div div{
-	text-align: justify;
+	text-align: left;
 	display: block;
 }
 
@@ -304,5 +304,13 @@ section.pro-describe{
 
 	#footer .row > div{
 		padding: 0 30px;
+	}
+
+	#contact .contact-title{
+		font-size: 18px;
+	}
+
+	#contact .link-at{
+		font-size: 22px;
 	}
 }
