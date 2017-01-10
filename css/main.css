@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css?family=Racing+Sans+One|Tangerine:400,700|Voltaire|Poiret+One|Lato:300,400');
+@import url('https://fonts.googleapis.com/css?family=Racing+Sans+One|Tangerine:700|Voltaire|Poiret+One|Lato:300,400');
 
 *{
 	outline: 0;
@@ -11,6 +11,7 @@ body {
 
 nav.navbar{
 	box-shadow: 0 2px 2px #a0a0a0;
+	background-color: #fff;
 }
 
 .navbar-brand{
@@ -22,15 +23,16 @@ nav.navbar{
 
 #navbar ul li a {
     color: #1b2272;
-    font-weight: 700;
-    font-family: 'Voltaire', sans-serif;
-    font-size: 18px;
+    font-weight: 400;
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
     text-transform: uppercase;
-    letter-spacing: 1px;
+    letter-spacing: 0.6px;
 }
 
-#navbar ul li a:hover{
-	text-decoration: underline;
+#navbar ul li:hover a{
+	color: #da3939;
+	cursor: pointer;
 }
 
 section.pro-describe{
@@ -67,17 +69,6 @@ section.pro-describe{
 
 .pro-detail .pro-desc{
 	visibility: hidden;
-	/*-webkit-animation-delay: 1s;
-	-moz-animation-delay: 1s;
-	-o-animation-delay: 1s;
-	-ms-animation-delay: 1s;
-	animation-delay: 1s;*/
-	/*
-	-webkit-animation-duration: 1s;
-	-moz-animation-duration: 1s;
-	-o-animation-duration: 1s;
-	-ms-animation-duration: 1s;
-	animation-duration: 1s;*/
 }
 
 
@@ -99,11 +90,10 @@ section.pro-describe{
 }
 
 .content h2{
-	font-family: 'Voltaire', sans-serif;
-	font-size: 70px;
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	font-size: 50px;
     text-transform: uppercase;
-    letter-spacing: -3px;
-    word-spacing: 10px;
     padding-top: 50px;
     margin-top: 0;
 }
@@ -131,10 +121,9 @@ section.pro-describe{
 }
 
 .about-detail div h4{
-	font-family: 'Voltaire', sans-serif;
-	font-size: 25px;
+	font-family: 'Lato', sans-serif;
+	font-size: 22px;
     text-transform: uppercase;
-    text-decoration: underline;
 }
 
 .about-detail div p, .about-detail .skills div div{
@@ -151,7 +140,7 @@ section.pro-describe{
 }
 
 .about-detail .skills div div{
-	text-align: left;
+	text-align: justify;
 	display: block;
 }
 

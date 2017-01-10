@@ -18,4 +18,8 @@ $(document).ready(function(){
 		$("#particles-js .pro-desc").css('visibility', 'visible').addClass("animated zoomIn");
 	});
 
+	$('body').scrollspy({selector:'.scrollclass',offset:50});
+
+	$('.scrollclass').click(function(){$('body').scrollTo($(this).data('target'),{duration:500,offset:-50});});
+
 });
