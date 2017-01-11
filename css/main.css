@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css?family=Racing+Sans+One|Tangerine:700|Voltaire|Poiret+One|Lato:300,400,700');
+@import url('https://fonts.googleapis.com/css?family=Racing+Sans+One|Tangerine:700|Voltaire|Poiret+One|Lato:300,400,700|Josefin+Sans:300,400,700');
 
 *{
 	outline: 0;
@@ -30,9 +30,19 @@ nav.navbar{
     letter-spacing: 0.6px;
 }
 
+#navbar .navbar-nav>.active>a{
+	color: #bb5555;
+	background-color: transparent;
+}
+
 #navbar ul li:hover a{
-	color: #da3939;
+	background-color: #e7e7e7;
 	cursor: pointer;
+}
+
+#navbar ul li:active a{
+	background-color: #bb5555;
+	color: #fff;
 }
 
 section.pro-describe{
@@ -90,9 +100,9 @@ section.pro-describe{
 }
 
 .content h2{
-	font-family: 'Lato', sans-serif;
+	font-family: 'Josefin Sans', sans-serif;
 	font-weight: 300;
-	font-size: 50px;
+	font-size: 60px;
     text-transform: uppercase;
     padding-top: 50px;
     margin-top: 0;
@@ -118,6 +128,7 @@ section.pro-describe{
 
 .about-detail div{
 	display: inline-block;
+	padding-bottom: 20px;
 }
 
 .about-detail div h4{
@@ -149,6 +160,31 @@ section.pro-describe{
 	color: #999;
 }
 
+/*#quotes{
+	margin-top: 20px;
+}
+
+#quotes .owl-carousel{
+	background-image: url('../img/background/128-119.jpg');
+	color: #000;
+}
+
+.owl-carousel blockquote{
+	margin: 40px auto;
+	border-left: 0;
+}
+
+.owl-carousel blockquote p{
+	font-size: 30px;
+	font-family: 'Poiret One', cursive;
+	text-shadow: 2px 2px 2px #cdcdcd;
+}*/
+
+
+#portfolio{
+	background-color: aliceblue;
+}
+
 #portfolio > div{
 	padding-bottom: 50px;
 }
@@ -168,11 +204,12 @@ section.pro-describe{
 #portfolio .img-responsive{
 	border: 1px solid #d4d4d4;
 	padding: 7px;
+	background-color: #fff;
 }
 
-#contact{
+/*#contact{
 	background-color: aliceblue;
-}
+}*/
 
 #contact .row{
 	padding: 25px 0;
@@ -269,6 +306,10 @@ section.pro-describe{
 	color: #287bbc;			/* linkedin */
 }
 
+#footer .social-links a i.fa-codepen{
+	color: #000;			/* codepen */
+}
+
 #footer .social-links a i{
 	opacity: 0.6;
 }
@@ -312,5 +353,9 @@ section.pro-describe{
 
 	#contact .link-at{
 		font-size: 22px;
+	}
+
+	.content h2{
+		font-size: 50px;
 	}
 }

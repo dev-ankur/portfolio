@@ -21,5 +21,14 @@ $(document).ready(function(){
 	$('body').scrollspy({selector:'.scrollclass',offset:50});
 
 	$('.scrollclass').click(function(){$('body').scrollTo($(this).data('target'),{duration:500,offset:-50});});
+/*
+	$(".owl-carousel").owlCarousel({
+		items:1,
+	    loop:true,
+	    margin:10,
+	    autoplay:true,
+	    autoplayTimeout:5000,
+	    autoplayHoverPause:true
+	});*/
 
 });
