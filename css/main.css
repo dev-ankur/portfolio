@@ -27,6 +27,9 @@ nav.navbar{
     font-size: 15px;
     text-transform: uppercase;
     letter-spacing: 0.6px;
+    background-color: transparent;
+    -webkit-transition: background-color 400ms linear;
+    transition: background-color 400ms linear;
 }
 
 #navbar .navbar-nav>.active>a{
@@ -35,7 +38,7 @@ nav.navbar{
 }
 
 #navbar ul li:hover a{
-	background-color: #e7e7e7;
+	background-color: #eee;
 	cursor: pointer;
 }
 
