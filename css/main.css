@@ -16,6 +16,7 @@ nav.navbar{
 
 .navbar-brand{
 	font-family: 'Cinzel', serif;
+	text-shadow: 2px 2px 2px #d2d2d2;
     font-size: 36px;
     word-spacing: 4px;
 }
