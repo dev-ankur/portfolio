@@ -11,7 +11,7 @@ $(document).ready(function(){
 	//var anim = "#particles-js .pro-title";
 	var events = "webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend";
 
-	$("#page_loader").fadeOut(3000, function(){
+	$("#page_loader").delay(2000).fadeOut(1000, function(){
 		$("#particles-js .pro-title").css('visibility', 'visible').addClass("animated flipInX").one(events, function(){
 
 			$("#particles-js .pro-desc").css('visibility', 'visible').addClass("animated zoomIn");
