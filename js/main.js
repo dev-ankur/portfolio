@@ -8,16 +8,16 @@ $(document).ready(function(){
 	})
 */
 
-	$("#particles-js .pro-title").css('visibility', 'visible').addClass("animated flipInX");
-
 	//var anim = "#particles-js .pro-title";
 	var events = "webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend";
 
-	$("#particles-js .pro-title").one(events, function(){
+	$("#page_loader").fadeOut(3000, function(){
+		$("#particles-js .pro-title").css('visibility', 'visible').addClass("animated flipInX").one(events, function(){
 
-		$("#particles-js .pro-desc").css('visibility', 'visible').addClass("animated zoomIn");
+			$("#particles-js .pro-desc").css('visibility', 'visible').addClass("animated zoomIn");
+		});
 	});
-
+	
 	$('body').scrollspy({selector:'.scrollclass',offset:50});
 
 	$('.scrollclass').click(function(){$('body').scrollTo($(this).data('target'),{duration:500,offset:-50});});

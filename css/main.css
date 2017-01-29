@@ -9,6 +9,24 @@ body {
   padding-top: 50px;
 }
 
+div#page_loader {
+  position: absolute;
+  top: 0;
+  bottom: 0%;
+  left: 0;
+  right: 0%;
+  background-color: white;
+  z-index: 9999;
+}
+
+div#page_loader img{
+	position: absolute;
+	top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
 nav.navbar{
 	box-shadow: 0 2px 2px #a0a0a0;
 	background-color: #fff;
