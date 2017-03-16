@@ -31,4 +31,45 @@ $(document).ready(function(){
 	    autoplayHoverPause:true
 	});*/
 
+	var sceneController = new ScrollMagic.Controller();
+
+	
+
+	$('.content h2, .content h4, .content h6, .content p, .about-detail div p, .about-detail .skills > div, #portfolio .img-responsive, #contact .row > div').each(function(){
+
+		/*var setMultipleClasses = TweenMax.set(this, {
+		    className: "animated fadeInUp fade-in"
+		});*/
+		// console.log(this);
+		var scene = new ScrollMagic.Scene({
+			triggerElement: this,
+			triggerHook: 0.7,
+			reverse: false
+		})
+		/*.setTween(setMultipleClasses)*/
+		.setClassToggle(this, 'fade-in')
+		/*.addIndicators({
+			name: 'fade scene',
+			colorTrigger: 'black',
+			colorStart: 'lightgreen'
+		})*/
+		.addTo(sceneController);
+
+	});
+
+	var scene = new ScrollMagic.Scene({
+		triggerElement: '.thanks',
+		triggerHook: 0.9,
+		reverse: false
+	})
+	/*.setTween(setMultipleClasses)*/
+	.setClassToggle('.thanks', 'zoom-in')
+	/*.addIndicators({
+		name: 'thanks fade scene',
+		colorTrigger: 'black',
+		colorStart: 'red'
+	})*/
+	.addTo(sceneController);
+	
+
 });
