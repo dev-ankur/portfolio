@@ -187,15 +187,17 @@ section.pro-describe{
 }
 
 .content h2, .content h4, .content h6, .about-detail div p, .about-detail .skills > div, #portfolio .img-responsive, #contact .row > div{
-	transform: translateY(50px); 
-	transition: all 0.5s ease-out;
-    opacity: 0;
+	/* transform: translateY(50px); 
+	transition: all 0.5s ease-out; */
+    opacity: 0; 
+    -webkit-animation-duration: 0.5s;
+    animation-duration: 0.5s;
 }
 
-.fade-in{
+/* .fade-in{
 	opacity: 1 !important;
 	transform: translateY(0) !important; 
-}
+} */
 
 .content h4{
 	font-family: 'Poiret One', cursive;

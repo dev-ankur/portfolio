@@ -33,9 +33,11 @@ $(document).ready(function(){
 
 	var sceneController = new ScrollMagic.Controller();
 
-	
+	var cssSelects = '.content h2, .content h4, .content h6, .content p, .about-detail div p, .about-detail .skills > div, #portfolio .img-responsive, #contact .row > div';
 
-	$('.content h2, .content h4, .content h6, .content p, .about-detail div p, .about-detail .skills > div, #portfolio .img-responsive, #contact .row > div').each(function(){
+	$(cssSelects).addClass('animated');
+
+	$(cssSelects).each(function(){
 
 		/*var setMultipleClasses = TweenMax.set(this, {
 		    className: "animated fadeInUp fade-in"
@@ -47,7 +49,7 @@ $(document).ready(function(){
 			reverse: false
 		})
 		/*.setTween(setMultipleClasses)*/
-		.setClassToggle(this, 'fade-in')
+		.setClassToggle(this, 'fadeInUp')
 		/*.addIndicators({
 			name: 'fade scene',
 			colorTrigger: 'black',
@@ -57,6 +59,9 @@ $(document).ready(function(){
 
 	});
 
+
+	// Separate animation for '.thanks' div
+	
 	var scene = new ScrollMagic.Scene({
 		triggerElement: '.thanks',
 		triggerHook: 0.9,
